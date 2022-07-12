@@ -1,0 +1,16 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+  # entorno-programacion
+  - file: getting-started
+  - file: variables-y-tipos-datos-basicos
+  - file: listas
+  - file: diccionarios
+  - file: condicionales
+  - file: bucles
+  - file: funciones
+  - file: clases
+  - file: ficheros-y-excepciones
