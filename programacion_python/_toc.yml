@@ -7,10 +7,17 @@ chapters:
   # entorno-programacion
   - file: getting-started
   - file: variables-y-tipos-datos-basicos
+    # - sections:
+    #   - file: variables
+    #   - file: cadenas_texto
+    #   - file: numeros
+    #   - file: comentarios
   # - file: listas
   # - file: diccionarios
   - file: condicionales
-  # - file: bucles
-  # - file: funciones
+    - sections:
+      - glob: ejercicios/condicionales*
+  - file: bucles
+  - file: funciones
   # - file: clases
   # - file: ficheros-y-excepciones

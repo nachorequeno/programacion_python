@@ -13,11 +13,10 @@ kernelspec:
   name: python3
 ---
 
-# Notebooks with MyST Markdown
+# Variables y tipos de datos básicos
 
-Jupyter Book also lets you write text-based notebooks using MyST Markdown.
-See [the Notebooks with MyST Markdown documentation](https://jupyterbook.org/file-types/myst-notebooks.html) for more detailed instructions.
-This page shows off a notebook written in MyST Markdown.
+En este capítulo aprenderemos los principales tipos de datos básicos que un programa en Python puede manejar. 
+También aprenderemos cómo usar variables para representar datos en nuestros programas.
 
 ## An example cell
 
