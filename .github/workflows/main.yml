@@ -1,0 +1,39 @@
+name: Build LaTeX document
+on: [push]
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v3
+      - name: Set up Jupyter Book
+        run: pip install programacion_python/requirements.txt
+      - name: Compile PDF
+        uses: dante-ev/latex-action@master
+          run: jupyter-book build --all programacion_python/ --builder pdflatex
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v3
+        with:
+            name: book.pdf
+            path: programacion_python/latex/book.pdf
+  build_html:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v3
+      - name: Set up Jupyter Book
+        run: pip install programacion_python/requirements.txt
+      - name: Compile HTML
+        run: jupyter-book build --all programacion_python/
+      - name: Upload HTML artifact
+        uses: actions/upload-artifact@v3
+          with:
+            name: book.pdf
+            path: programacion_python/html
+
+# jupyter-book build --all mybookname/
+# jupyter-book build mybookname/ --builder pdflatex
+# jupyter-book build mybookname/ --builder latex
+#sudo apt-get install texlive-latex-recommended texlive-latex-extra \
+#                     texlive-fonts-recommended texlive-fonts-extra \
+#                     texlive-xetex latexmk
