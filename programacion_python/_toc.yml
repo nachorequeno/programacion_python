@@ -15,8 +15,8 @@ chapters:
   # - file: listas
   # - file: diccionarios
   - file: condicionales
-    - sections:
-      - glob: ejercicios/condicionales*
+    sections:
+      - glob: ejercicios/condicionales/*
   - file: bucles
   - file: funciones
   # - file: clases
