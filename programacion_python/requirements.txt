@@ -1,7 +1,6 @@
-jupyter-book==0.13.0
-django==4.0.6
-jinja2==3.1.2
-matplotlib==3.3.3
-numpy==1.21.0
+jupyter-book
+django
+jinja2
+matplotlib
+numpy
 nbgrader
-#formgrader

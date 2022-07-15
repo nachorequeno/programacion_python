@@ -7,6 +7,8 @@ chapters:
   # entorno-programacion
   - file: getting-started
   - file: variables-y-tipos-datos-basicos
+    sections:
+      - glob: ejercicios/expresiones/*
     # - sections:
     #   - file: variables
     #   - file: cadenas_texto
