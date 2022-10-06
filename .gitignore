@@ -1,0 +1,14 @@
+*synctex.gz
+*.bak
+
+*~
+auto
+__pycache__
+.ipynb_checkpoints
+venv
+.python-version
+exchange
+release
+python
+tmp
+gradebook.db
