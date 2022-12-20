@@ -21,5 +21,7 @@ chapters:
       - glob: ejercicios/condicionales/*
   - file: bucles
   - file: funciones
+    sections:
+        - glob: nbgrader/source/hoja_01/*
   # - file: clases
   # - file: ficheros-y-excepciones

@@ -13,16 +13,18 @@ jobs:
       - name: Install dependencies
         run: python -m pip install --upgrade pip
       - name: Set up Jupyter Book
-        run: pip install -r programacion_python/requirements.txt
+        run: pip install -r content/requirements.txt
       - name: Set up Latex
         uses: dante-ev/latex-action@master
+      - name: Move nbgrader folder
+        run: cp -R nbgrader content/
 
   build_latex:
     needs: setup
     runs-on: ubuntu-latest
     steps:
       - name: Compile PDF
-        run: jupyter-book build --all programacion_python/ --builder pdflatex
+        run: jupyter-book build --all content/ --builder pdflatex
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v3
         with:
@@ -34,7 +36,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Compile HTML
-        run: jupyter-book build --all programacion_python/
+        run: jupyter-book build --all content/
       - name: Upload HTML artifact
         uses: actions/upload-artifact@v3
         with:
