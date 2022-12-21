@@ -22,6 +22,6 @@ chapters:
   - file: bucles
   - file: funciones
     sections:
-        - glob: nbgrader/source/hoja_01/*
+        - glob: ejercicios/release/hoja_*/*
   # - file: clases
   # - file: ficheros-y-excepciones
