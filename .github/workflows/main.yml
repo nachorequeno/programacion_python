@@ -30,7 +30,7 @@ jobs:
             name: book.html
             path: content/html
       - name: Install Xelatex
-        run: apt-get update && apt-get -y install texlive-full
+        run: sudo apt-get update && sudo apt-get -y install texlive-full
       - name: Compile PDF
         run: jupyter-book build --all content/ --builder pdflatex
       - name: Upload PDF artifact
