@@ -13,7 +13,7 @@ jobs:
       - name: Install dependencies
         run: python -m pip install --upgrade pip
       - name: Install ipython3
-        run: apt-get update && apt-get -y install ipython3
+        run: sudo apt-get update && sudo apt-get -y install ipython3
       - name: Set up nbgrader
         run: pip install nbgrader
       - name: Set up Jupyter Book
