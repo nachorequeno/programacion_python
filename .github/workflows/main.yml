@@ -15,7 +15,7 @@ jobs:
       - name: Install ipython3
         run: sudo apt-get update && sudo apt-get -y install ipython3
       - name: Set up nbgrader and matplotlib
-        run: pip install ipython=8.5.0 nbgrader matplotlib
+        run: pip install ipython==8.5.0 nbgrader matplotlib
       - name: Set up Jupyter Book
         run: pip install jupyter-book
       - name: nbgrader generates assignments
