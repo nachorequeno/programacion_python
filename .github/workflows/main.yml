@@ -14,8 +14,8 @@ jobs:
         run: python -m pip install --upgrade pip
       - name: Install ipython3
         run: sudo apt-get update && sudo apt-get -y install ipython3
-      - name: Set up nbgrader
-        run: pip install nbgrader
+      - name: Set up nbgrader and matplotlib
+        run: pip install ipython=8.5.0 nbgrader matplotlib
       - name: Set up Jupyter Book
         run: pip install jupyter-book
       - name: nbgrader generates assignments
@@ -27,14 +27,5 @@ jobs:
       - name: Upload HTML artifact
         uses: actions/upload-artifact@v3
         with:
-            name: book.html
-            path: content/html
-      - name: Install Xelatex
-        run: sudo apt-get update && sudo apt-get -y install texlive-full
-      - name: Compile PDF
-        run: jupyter-book build --all content/ --builder pdflatex
-      - name: Upload PDF artifact
-        uses: actions/upload-artifact@v3
-        with:
-            name: book.pdf
-            path: content/latex/book.pdf
+            name: book
+            path: content/_build/html

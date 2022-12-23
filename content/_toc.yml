@@ -21,7 +21,8 @@ chapters:
       - glob: ejercicios/condicionales/*
   - file: bucles
   - file: funciones
+  - file: ejercicios
     sections:
-        - glob: ejercicios/release/hoja_*/*
+        - glob: ejercicios/release/hoja_0*/*
   # - file: clases
   # - file: ficheros-y-excepciones
