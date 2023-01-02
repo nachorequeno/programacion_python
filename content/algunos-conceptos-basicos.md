@@ -46,8 +46,18 @@ información (datos) al algoritmo en el momento de realizar su invocación y la 
 Opcionalmente, un algoritmo puede definirse como función, en cuyo caso, tras la lista de parámetros debe especificarse una cláusula devuelve nombreTipo que
 define el tipo de dato que devolverá la función al ser invocada. Un algoritmo sin esta última cláusula recibe el nombre de procedimiento.
 
-Al definir un algoritmo debe incluirse una especificación que describa de forma
-clara y concisa el comportamiento del algoritmo, es decir, qué es lo que hace el algoritmo cuando es ejecutado
+Al definir un algoritmo debe incluirse una especificación que describa de forma clara y concisa el comportamiento del algoritmo, es decir, qué es lo que hace el algoritmo cuando es ejecutado
+
+1. Precondición: una descripción de las condiciones que deben satisfacer los datos de entrada al algoritmo.
+2. Postcondición: una descripción de las cond1c1ones que deben satisfacer los datos de salida o resultados del algoritmo.
+
+3. ....
+4. 
+Propiedades imprescindibles de un algoritmo son:
+• Corrección, es decir un algoritmo debe proporcionar una solución conecta sin errores ni omisiones, al problema planteado.
+• Legibilidad, es decir, que el documento que describe el algoritmo sea fácil de entender no sólo por su autor sino por otras personas que posean unos conocimientos suficientes de programación (por ejemplo, otros programadores).
+
+Propiedades muy deseables de un algoritmo, aunque no estrictamente necesarias, son:
 
 # Lenguajes de programación: elementos de un programa y ejecución de un programa
 Existen cientos de lenguajes de programación de computadores.
@@ -66,7 +76,7 @@ Símbolos. Un algoritmo o programa consta de una secuencia de símbolos que pued
 
 •	Identificadores: nombres que se asocian a objetos informáticos que se definen en el algoritmo o programa.
 
-•	Operadores:    +   -    *  /   > $\geq$ = $\neq$ < $\leq$ $\neg$ $\wee$ $\wedge$ etc.
+•	Operadores:    +   -    *  /   > $$\geq$$ = $$\neq$$ < $$\leq$$ $$\neg$$ $$\wee$$ $$\wedge$$ etc.
 •	Separadores:  , ; . ( )	[ ] etc.
 
 Un identificador se construye, en nuestra notación algorítmica, de acuerdo con la
@@ -76,12 +86,12 @@ identificador : := <letra> { <letra> | <dígito> | _}
 Esta notación, aplicada ahora a la especificación de la sintaxis de los símbolos,
 será utilizada a lo largo del curso para especificar también la sintaxis de las frases
 que se puedan construir concatenando símbolos. El meta-carácter "I" permite definir
-opciones alternativas, mientras que lo encerrado entre llaves " { .. . }" puede
+opciones alternativas, mientras que lo encerrado entre llaves "{...}" puede
 reproducirse cero o más veces . La regla anterior dice que un símbolo
-identificador se constmye como una secuencia de caracteres tal que el primero
+identificador se construye como una secuencia de caracteres tal que el primero
 es una letra y los sucesivos, si existen, pueden ser o letras o dígitos o el carácter '_'.
 Las definiciones de letra y digi to se presentan a continuación mediante sus
 correspondientes reglas sintácticas:
 
-letra : : = A | B | $\cdots$ | Y | Z | a | b | $\cdots$ | y | z
+letra : : = A | B | $$\cdots$$ | Y | Z | a | b | $$\cdots$$ | y | z
 digito : := O | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
