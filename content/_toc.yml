@@ -6,6 +6,7 @@ root: intro
 chapters:
   # entorno-programacion
   - file: getting-started
+  - file: algunos-conceptos-basicos
   - file: variables-y-tipos-datos-basicos
     sections:
       - glob: ejercicios/expresiones/*

@@ -37,16 +37,51 @@ Todas las razones anteriores justifican que en estas notas se utilice una notaci
 Su sintaxis se resume en un capítulo anexo, situado al final de estas notas.
 
 Utilizando ya esta notación algorítmica, la definición de un algoritmo responde al siguiente esquema general:
+...
 
-# Variables y tipos de datos básicos
+Un algoritmo tiene asociado un nombre mediante el cual se podrá invocar su ejecución cuantas veces se desee. 
+Un algoritmo puede tener asociada una lista de parámetros cuyo fin es el intercambio de información posibilitando la entrada de
+información (datos) al algoritmo en el momento de realizar su invocación y la salida de información (resultados) del algoritmo al concluir su ejecución.
 
-En este capítulo aprenderemos los principales tipos de datos básicos que un programa en Python puede manejar. 
-También aprenderemos cómo usar variables para representar datos en nuestros programas.
+Opcionalmente, un algoritmo puede definirse como función, en cuyo caso, tras la lista de parámetros debe especificarse una cláusula devuelve nombreTipo que
+define el tipo de dato que devolverá la función al ser invocada. Un algoritmo sin esta última cláusula recibe el nombre de procedimiento.
 
-Un algoritmo tiene asociado un nombre mediante el cual se podrá invocar s11 ejecución cuantas veces se desee.
-Un algoritmo puede tener asociada una lista de parámetros cuyo fin es el intercambio de información posibilitando la entrada de información (datos) al algoritmo en el momento de realizar su invocación y la salida de información (resultados) del algoritmo al concluir su ejecución.
+Al definir un algoritmo debe incluirse una especificación que describa de forma
+clara y concisa el comportamiento del algoritmo, es decir, qué es lo que hace el algoritmo cuando es ejecutado
 
-Opcionalmente, un algoritmo puede definirse como función, en cuyo caso, tras la lista de parámetros debe especificarse una cláusula devuelve nombreTipo que define el tipo de dato que devolverá la función al ser invocada.
-Un algoritmo sin esta última cláusula recibe el nombre de procedimiento.
+# Lenguajes de programación: elementos de un programa y ejecución de un programa
+Existen cientos de lenguajes de programación de computadores.
+Muchos de ellos son de propósito específico, es decir, han sido concebidos para escribir programas que resuelvan problemas en ámbitos de aplicación muy concretos.
+En cambio, existen lo que se denomina lenguajes de programación de propósito general.
+Entre los más difundidos en los últimos años podríamos citar, entre otros, Ada, C, C++, Java, Módula-2 o Pascal.
+Cualquiera de ellos pudiera ser utilizado como lenguaje de referencia en un curso de introducción a la programación como el presente aunque, por las razones aducidas anteriormente, utilizaremos una notación algorítmica  propia  que  iremos  presentando  a medida que los nuevos   conceptos  y problemas a tratar lo exijan.
 
-Al definir un algoritmo debe incluirse una especificación que describa de forma clara y concisa el comportamiento del algoritmo, es decir, qllé es lo que hace el
+Los elementos y técnicas que se presenten alrededor de nuestra notación algorítmica son, en su mayoría, generalizables a los lenguajes de programación "comerciales" antes citados.
+
+## Elementos de un algoritmo o programa
+
+Símbolos. Un algoritmo o programa consta de una secuencia de símbolos que pueden pertenecer a las siguientes categorías:
+
+•	Palabras claves o palabras reservadas por la notación algorítmica (o del lenguaje de programación): algoritmo, principio, fin, si, entonces, si_no, finSi, tabla, registro, fichero, mod, div, verdad, falso, etc.
+
+•	Identificadores: nombres que se asocian a objetos informáticos que se definen en el algoritmo o programa.
+
+•	Operadores:    +   -    *  /   > $\geq$ = $\neq$ < $\leq$ $\neg$ $\wee$ $\wedge$ etc.
+•	Separadores:  , ; . ( )	[ ] etc.
+
+Un identificador se construye, en nuestra notación algorítmica, de acuerdo con la
+siguiente regla:
+identificador : := <letra> { <letra> | <dígito> | _}
+
+Esta notación, aplicada ahora a la especificación de la sintaxis de los símbolos,
+será utilizada a lo largo del curso para especificar también la sintaxis de las frases
+que se puedan construir concatenando símbolos. El meta-carácter "I" permite definir
+opciones alternativas, mientras que lo encerrado entre llaves " { .. . }" puede
+reproducirse cero o más veces . La regla anterior dice que un símbolo
+identificador se constmye como una secuencia de caracteres tal que el primero
+es una letra y los sucesivos, si existen, pueden ser o letras o dígitos o el carácter '_'.
+Las definiciones de letra y digi to se presentan a continuación mediante sus
+correspondientes reglas sintácticas:
+
+letra : : = A | B | $\cdots$ | Y | Z | a | b | $\cdots$ | y | z
+digito : := O | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
