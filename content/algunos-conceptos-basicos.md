@@ -76,7 +76,7 @@ Símbolos. Un algoritmo o programa consta de una secuencia de símbolos que pued
 
 •	Identificadores: nombres que se asocian a objetos informáticos que se definen en el algoritmo o programa.
 
-•	Operadores:    +   -    *  /   > $$\geq$$ = $$\neq$$ < $$\leq$$ $$\neg$$ $$\wee$$ $$\wedge$$ etc.
+•	Operadores:    +   -    *  /   > $\geq$ = $\neq$ < $\leq$ $\neg$ $\wee$ $\wedge$ etc.
 •	Separadores:  , ; . ( )	[ ] etc.
 
 Un identificador se construye, en nuestra notación algorítmica, de acuerdo con la
@@ -93,5 +93,5 @@ es una letra y los sucesivos, si existen, pueden ser o letras o dígitos o el ca
 Las definiciones de letra y digi to se presentan a continuación mediante sus
 correspondientes reglas sintácticas:
 
-letra : : = A | B | $$\cdots$$ | Y | Z | a | b | $$\cdots$$ | y | z
+letra : : = A | B | `$\cdots$` | Y | Z | a | b | `$\cdots$` | y | z
 digito : := O | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
