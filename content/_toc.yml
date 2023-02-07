@@ -6,6 +6,7 @@ root: intro
 chapters:
   # entorno-programacion
   - file: getting-started
+  - file: algunos-conceptos-basicos
   - file: variables-y-tipos-datos-basicos
     sections:
       - glob: ejercicios/expresiones/*
@@ -21,5 +22,8 @@ chapters:
       - glob: ejercicios/condicionales/*
   - file: bucles
   - file: funciones
+  - file: ejercicios
+    sections:
+        - glob: ejercicios/release/hoja_0*/*
   # - file: clases
   # - file: ficheros-y-excepciones

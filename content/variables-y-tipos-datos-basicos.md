@@ -18,6 +18,15 @@ kernelspec:
 En este capítulo aprenderemos los principales tipos de datos básicos que un programa en Python puede manejar. 
 También aprenderemos cómo usar variables para representar datos en nuestros programas.
 
+Un algoritmo tiene asociado un nombre mediante el cual se podrá invocar s11 ejecución cuantas veces se desee.
+Un algoritmo puede tener asociada una lista de parámetros cuyo fin es el intercambio de información posibilitando la entrada de información (datos) al algoritmo en el momento de realizar su invocación y la salida de información (resultados) del algoritmo al concluir su ejecución.
+
+Opcionalmente, un algoritmo puede definirse como función, en cuyo caso, tras la lista de parámetros debe especificarse una cláusula devuelve nombreTipo que define el tipo de dato que devolverá la función al ser invocada.
+Un algoritmo sin esta última cláusula recibe el nombre de procedimiento.
+
+Al definir un algoritmo debe incluirse una especificación que describa de forma clara y concisa el comportamiento del algoritmo, es decir, qllé es lo que hace el
+...
+
 ## An example cell
 
 With MyST Markdown, you can define code cells with a directive like so:
